@@ -18,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 
 --define plugings inside here
 local plugins = {
-{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+{ "catppuccin/nvim", name = "catppuccin", priority = 1000 , lazy = false  },
 {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
       dependencies = { 'nvim-lua/plenary.nvim' }
