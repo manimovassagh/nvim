@@ -20,8 +20,6 @@ local opts = {}
 
 --init package manager
 require("lazy").setup("plugins")
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
 
 --telescope key binding and requirement
 local builtin = require("telescope.builtin")
