@@ -40,7 +40,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 --treesitter configs
 local configs = require("nvim-treesitter.configs")
 configs.setup({
-          ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" , "typescript" },
+          ensure_installed = { "lua" ,"yaml", "javascript", "html" , "typescript","java","python","go","sql" },
           sync_install = false,
           highlight = { enable = true },
           indent = { enable = true },  
