@@ -54,3 +54,7 @@ configs.setup({
           highlight = { enable = true },
           indent = { enable = true },  
         })
+
+--neotree keymap binding
+vim.keymap.set('n','<leader>e',':Neotree<CR>')
+
