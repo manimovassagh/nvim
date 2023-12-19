@@ -1,8 +1,3 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.g.mapleader = " "
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -19,22 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 local opts = {}
 
 --init package manager
+require ("vim-options")
 require("lazy").setup("plugins")
 
---telescope key binding and requirement
-local builtin = require("telescope.builtin")
-vim.keymap.set('n', '<C-f>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-
---treesitter configs
-local configs = require("nvim-treesitter.configs")
-configs.setup({
-          ensure_installed = { "lua" ,"yaml", "javascript", "html" , "typescript","java","python","go","sql" },
-          sync_install = false,
-          highlight = { enable = true },
-          indent = { enable = true },  
-        })
-
---neotree keymap binding
-vim.keymap.set('n','<leader>e',':Neotree<CR>')
 
