@@ -8,7 +8,7 @@ return {{
     "williamboman/mason-lspconfig.nvim",
     config = function()
         require("mason-lspconfig").setup({
-            ensure_installed = {"lua_ls", "tsserver","gopls","java_language_server","pylsp","html"}
+            ensure_installed = {"lua_ls", "tsserver", "gopls", "java_language_server", "pylsp", "html","jsonls"}
         })
     end
 }, {
@@ -22,6 +22,7 @@ return {{
         lspconfig.java_language_server.setup({})
         lspconfig.pylsp.setup({})
         lspconfig.html.setup({})
+        lspconfig.jsonls.setup({})
 
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
         vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
