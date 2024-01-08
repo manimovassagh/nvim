@@ -1,1 +1,1 @@
-# nvim_config_mani
+# This is my own config for development
