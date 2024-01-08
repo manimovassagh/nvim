@@ -1,1 +1,1 @@
-# This is my own config for development
+# This is my own Neovim config for development
