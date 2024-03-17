@@ -20,3 +20,4 @@ local opts = {}
 require ("vim-options")
 require("lazy").setup("plugins")
 
+vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', {noremap = true, silent = true})
